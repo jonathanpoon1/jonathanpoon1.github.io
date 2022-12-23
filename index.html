@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jonathan Poon Website</title>
+<meta name="author" content="Jonathan Poon" />
+<meta name="description" content="Web Developer Portfolio/Website" />
+<meta name="keywords"  content="Jonathan, Poon, Web Developer, Portfolio, Website" />
+<meta name="Resource-type" content="Document" />
+
+<link rel="stylesheet" type="text/css" href="./fullpage/fullpage.css" />
+<link rel="stylesheet" type="text/css" href="./fullpage/examples.css" />
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="intro">
+			<h1>Hello! <br> I'm Jonathan Poon</h1>
+			<p>
+				and I'm an aspiring web devloper 
+			</p>
+		</div>
+	</div>
+	
+	<div class="section " id="section1">
+		<div class="intro">
+			<h1 style="text-align:right;">   Intro <span class="tab"></span></h1>
+		
+			<p style="text-align:justify;">
+				I am passionate about making a product that is visually appealing to everyone. <br><br>
+				I graduated from the University of Waterloo with a BMath in Honours Data Science. <br><br>
+				From gaming to coding, I enjoy tasks that allow me to learn new skills and help me improve as a person.
+		 </p>
+		</div>
+	</div>
+	
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1 style="text-align:left;">  <span class="tab"></span>Experience </h1>
+			<p style="text-align:justify;">
+				During my time as a Database Administrator for the Ontario Ministry of Finance, I was the main contact for users of their database.
+				Whenever I had requests to provide tables to the users, I was able to modify code quickly to ensure fast response times. <br><br>
+
+				I have strong communication skills that have evolved during my time as a Math Tutorial Centre Coordinator,
+				where I was constantly discussing with tutors. <br><br>
+
+				While working on projects for computer science courses during my undergrad, I used Git to manage code with my peers. 
+			</p>
+		</div>
+	</div>
+	
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1 style="text-align:right;">   Skills <span class="tab"></span></h1>
+			<p style="text-align:justify;">
+				I've been coding for over 5 years, and have loved every minute of it! I started with learning object-oriented programming with C++ and Java
+				and have expanded my skills to include HTML, CSS and Javascript. <br><br>
+
+				Currently, I'm learning React.js and Bootstrap, and I hope to make projects using these frameworks soon. <br><br>
+
+				As a kid, I always loved solving puzzles, whether they were in school or in video games. 
+				Over time, these activities developed my problem solving skills, helping me become the developer that I am today.
+
+			</p>
+		</div>
+	</div>
+
+	<div class="section" id="section4">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+				<h1 style="text-align:left;">  <span class="tab2"></span>  Projects </h1>
+				<p>
+				<a href="./game/game.html" class="button button2" style="background-color: blue;">A simple game made in javascript</a></p>
+				<br>
+				<a href="https://github.com/jonathanpoon1/website/tree/main/game" class="button button2" style="background-color: blue;">Code for the game</a></p>
+			</div>
+		</div>
+	    <div class="slide" id="slide2">
+			<p>
+				<a href="https://github.com/jonathanpoon1/website" class="button button2" style="background-color: blue;">Code for this website</a>
+				-need to update link to the correct one once ready
+			</p>
+		</div>
+	</div>
+	
+	<div class="section" id="section5">
+		<div class="intro">
+			<h1> Contact me </h1>
+			<p> -have link to resume (need to change name of file)
+				<a href="JonathanPoonResume.pdf" class="button button2">View Resume</a>
+				<br><br>			
+				<a href="mailto:jonathan_poon@outlook.com" class="button button2">Email me</a>
+			</p>
+		</div>
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="./fullpage/fullpage.js"></script>
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'About', 'Experience','Skills','Projects','Contact'],
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C','#C63D0F', '#1BBC9B', '#7E8F7C'],
+        scrollBar: true
+    });
+</script>
+
+</body>
+</html>
