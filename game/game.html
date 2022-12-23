@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" onkeypress="jump(event);move_sideways(event);swing(event);">
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="gamestyle.css">
+</head>
+<body>
+	<div id="game">
+		<img id="mustafar" src="mustafar.jpg">		
+		<img id="enemy" src="anakin_new.png" alt="anakin">
+		<img id="character" src="obiwan_new.png" alt="obiwan">
+		<img id="enemy_lightsaber" src="red_lightsaber_new.png" alt="red-lightsaber">	
+		<img id="lightsaber" src="lightsaber_new.png" alt="lightsaber">		
+		<progress id="health" value="100" max="100"></progress>
+		<progress id="e_health" value="100" max="100"></progress>
+		<img id="keys" src="keys.png" alt="keys">
+		<p>Controls:<br>
+		a/d - move left/right <br>
+		w - jump <br>
+		s - swing lightsaber</p>
+	</div>
+</body>
+<script src="gamejava.js"></script>
+</html>

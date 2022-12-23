@@ -1,0 +1,132 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#game{
+	width: 1000px;
+	height: 500px;
+	border: 1px solid black;
+}
+/*background picture*/
+#mustafar{
+	width:1000px;
+	height:500px;
+	opacity: 0.9;
+}
+#character{
+	width: 60px;
+	height: 150px;
+	position: absolute;
+	top: 350px;
+	left: 0px;
+}
+/*player jump animation*/
+.jump_animate{
+	animation: jump 0.3s linear;
+}
+@keyframes jump{
+    0%{top: 350px;}
+    30%{top: 240px;}
+    70%{top: 240px;}
+    100%{top: 350px;}
+}
+#lightsaber{
+	width: 120px;
+	height: 90px;
+	position: absolute;
+	top: 350px;
+	left: 60px;	
+}
+/*lightsaber swing animation*/
+.swing_animate{
+	animation: swing 0.3s linear;
+}
+@keyframes swing{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(45deg);}
+	100%{transform: rotate(0deg);}	
+}
+
+#enemy{
+	width: 80px;
+	height: 170px;
+	position: absolute;
+	top: 340px;
+	left: 940px;
+	animation: enemy_move1, enemy_move2;
+	animation-duration: 3s, 3s;
+	animation-delay: 0s, 3s;
+	animation-iteration-count: 1, infinite;
+	animation-timing-function: linear, linear;
+}	
+
+/*animation to enemy to middle of screen*/
+@keyframes enemy_move1{
+	0%{left: 940px;}
+    100%{left: 500px;}	
+}
+/*second animation, move enemy back and forth*/
+@keyframes enemy_move2{
+	0%{left: 500px;}
+	21%{left: 500px;}
+	40%{left: 400px;}
+	80%{left: 600px;}
+	100%{left: 500px;}
+}
+#enemy_lightsaber{
+	width: 120px;
+	height: 90px;
+	position: absolute;
+	top: 350px;
+	left: 900px;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	animation-name: enemy_move3, enemy_move4;
+	animation-duration: 3s, 3s;
+	animation-delay: 0s, 3s;
+	animation-iteration-count: 1, infinite;
+	animation-timing-function: linear, linear;
+}
+
+/*first animation to move lightsaber middle of screen*/
+@keyframes enemy_move3{
+	0%{left: 840px;}
+    100%{left: 400px;}	
+}
+/*next animation, move lightsaber back and forth to follow enemy*/
+@keyframes enemy_move4{
+	0%{left: 400px;}
+	7%{transform: rotate(0deg) scaleX(-1);}
+	14%{transform: rotate(-45deg) scaleX(-1);}
+	20%{transform: rotate(0deg) scaleX(-1);}
+	21%{left: 400px;}
+	40%{left: 300px;}
+	80%{left: 500px;}
+	100%{left: 400px;}
+}
+
+/*health bars on top of screen*/
+#health{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: green;
+}
+
+#e_health{
+	position: absolute;
+	top: 0px;
+	left: 840px;
+	background-color: green;
+}
+
+/*controls at bottom of game*/
+#keys{
+	height: 100px;
+	width: 180px;
+}
+
+p{
+	font-family: arial;
+	font-size: 20px;
+}
