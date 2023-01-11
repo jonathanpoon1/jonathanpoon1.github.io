@@ -18,7 +18,18 @@
 </head>
 <body>
 
+<ul id="menu">
+	<li data-menuanchor="Home"><a href="#Home">Home</a></li>
+	<li data-menuanchor="About"><a href="#About">About</a></li>
+	<li data-menuanchor="Experience"><a href="#Experience">Experience</a></li>
+	<li data-menuanchor="Skills"><a href="#Skills">Skills</a></li>
+	<li data-menuanchor="Projects"><a href="#Projects">Project</a></li>
+	<li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
+</ul>
+
+	<!-- have to buy license -->
 <div id="fullpage">
+	<!-- First slide, contains header -->
 	<div class="section" id="section0">
 		<div class="intro">
 			<h1>Hello! <br> I'm Jonathan Poon</h1>
@@ -27,7 +38,7 @@
 			</p>
 		</div>
 	</div>
-	
+	<!-- Second slide, contains introduction-->
 	<div class="section " id="section1">
 		<div class="intro">
 			<h1 style="text-align:right;">   Intro <span class="tab"></span></h1>
@@ -39,7 +50,7 @@
 		 </p>
 		</div>
 	</div>
-	
+	<!--Third slide, contains experience-->
 	<div class="section" id="section2">
 		<div class="intro">
 			<h1 style="text-align:left;">  <span class="tab"></span>Experience </h1>
@@ -54,7 +65,7 @@
 			</p>
 		</div>
 	</div>
-	
+	<!--Fourth slide, contains skills-->
 	<div class="section" id="section3">
 		<div class="intro">
 			<h1 style="text-align:right;">   Skills <span class="tab"></span></h1>
@@ -70,7 +81,7 @@
 			</p>
 		</div>
 	</div>
-
+	<!--Fifth slide(s), contains list of projects. -->
 	<div class="section" id="section4">
 	    <div class="slide" id="slide1">
 			<div class="intro">
@@ -87,7 +98,7 @@
 			</p>
 		</div>
 	</div>
-	
+	<!-- Last slide, contains info on how to contact me -->
 	<div class="section" id="section5">
 		<div class="intro">
 			<h1> Contact me </h1>
@@ -103,7 +114,7 @@
 <script type="text/javascript" src="./fullpage/fullpage.js"></script>
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        anchors: ['firstPage', 'About', 'Experience','Skills','Projects','Contact'],
+        anchors: ['Home', 'About', 'Experience','Skills','Projects','Contact'],
         sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C','#C63D0F', '#1BBC9B', '#7E8F7C'],
         scrollBar: true
     });
